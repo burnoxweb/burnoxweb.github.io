@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo Kirana Store, Tatisilwai</title>
+<meta name="description" content="Demo: a Grocery · Daily needs · Home delivery website, updated on WhatsApp.">
+<meta property="og:title" content="Demo Kirana Store, Tatisilwai">
+<meta property="og:description" content="Grocery · Daily needs · Home delivery. Rates, offers, order on WhatsApp. Demo website by Burnox.">
+<meta name="theme-color" content="#2b8a3e">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f4f6fb;color:#151a2d;line-height:1.45}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+header{background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 1px 8px rgba(20,30,80,.08)}
+header .wrap{display:flex;align-items:center;gap:10px;height:58px}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#2b8a3e,#fab005);display:grid;place-items:center;color:#fff;font-weight:800}
+.brand{font-weight:800;font-size:16px;line-height:1.1}.brand small{display:block;font-weight:500;color:#6b7290;font-size:12px}
+.ribbon{margin-left:auto;background:#ffd400;color:#3a2a00;font-weight:800;font-size:11px;letter-spacing:1px;padding:4px 8px;border-radius:6px;transform:rotate(3deg)}
+.hero{background:linear-gradient(135deg,#2b8a3e 0%,#40c057 55%,#fab005 100%);color:#fff;padding:28px 0 34px}
+.hero h1{font-size:28px;line-height:1.15;margin:6px 0 8px}
+.hero p{opacity:.92;font-size:15px}
+.pill{display:inline-block;background:rgba(255,255,255,.18);padding:4px 10px;border-radius:99px;font-size:12px;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 16px;border-radius:12px;font-weight:700;font-size:15px}
+.wa{background:#25d366;color:#05310f;flex:1 1 100%}
+.ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35);flex:1}
+section{padding:26px 0}
+h2{font-size:21px;margin-bottom:4px}.sub{color:#6b7290;font-size:13px;margin-bottom:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid #d9def0;background:#fff;padding:7px 14px;border-radius:99px;font-size:13px;font-weight:600;color:#3b4263;cursor:pointer}
+.chip.on{background:#151a2d;color:#fff;border-color:#151a2d}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border-radius:16px;padding:12px;box-shadow:0 2px 10px rgba(20,30,80,.06);display:flex;flex-direction:column}
+.card.out{opacity:.7}
+.ph{height:110px;font-size:54px;display:grid;place-items:center;border-radius:12px;margin-bottom:10px}
+.badge{align-self:flex-start;font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;margin-bottom:6px}
+.b-in{background:#e3f8ea;color:#137a37}.b-out{background:#ffe6e6;color:#b42323}.b-new{background:#e8e6ff;color:#4a2bd6}
+.card h3{font-size:14px;line-height:1.25}
+.spec{font-size:12px;color:#6b7290}
+.price{font-weight:800;font-size:16px;margin-top:4px}.price small{display:block;font-size:10px;font-weight:600;color:#c2410c}
+.ask{margin-top:auto;padding-top:10px}.ask a{display:block;text-align:center;background:#25d366;color:#05310f;font-weight:700;font-size:12.5px;padding:9px 4px;border-radius:10px;white-space:nowrap}
+.card.out .ask a{background:#eef0f6;color:#3b4263}
+.box{background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 10px rgba(20,30,80,.06)}
+.offer{background:linear-gradient(135deg,#ff7a18,#fab005);color:#fff}
+.offer b{font-size:22px;display:block}
+.two{display:grid;gap:12px}@media(min-width:640px){.two{grid-template-columns:1fr 1fr}}
+.list{list-style:none;display:grid;gap:8px;font-size:14px}.list li{display:flex;gap:8px}
+.steps{display:grid;gap:10px}
+.step{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px;box-shadow:0 2px 10px rgba(20,30,80,.06)}
+.num{flex:none;width:34px;height:34px;border-radius:50%;background:#2b8a3e;color:#fff;font-weight:800;display:grid;place-items:center}
+.step b{display:block;font-size:15px}.step span{font-size:13px;color:#6b7290}
+code{background:#151a2d;color:#b8ff5c;padding:10px 12px;border-radius:10px;display:block;font-size:11.5px;overflow-x:auto;white-space:pre;margin-top:10px}
+footer{background:#151a2d;color:#c9cde0;text-align:center;padding:22px 16px 90px;font-size:13px}
+footer a{color:#b8ff5c;font-weight:700}
+.float{position:fixed;right:14px;bottom:14px;background:#25d366;color:#05310f;font-weight:800;padding:13px 16px;border-radius:99px;box-shadow:0 6px 18px rgba(0,0,0,.25);font-size:14px;z-index:9}
+.note{font-size:11px;color:#8a90a8;margin-top:8px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tile{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;font-size:34px;color:#fff}.tile small{font-size:10px;font-weight:700;opacity:.9;display:block;text-align:center}
+.tr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.tr .box{text-align:center;padding:12px 6px}.av{width:56px;height:56px;border-radius:50%;margin:0 auto 6px;display:grid;place-items:center;font-size:28px;background:linear-gradient(135deg,#40c057,#fab005)}.tr b{font-size:13px;display:block}.tr span{font-size:11px;color:#6b7290}
+</style></head><body>
+<header><div class="wrap"><div class="logo">K</div><div class="brand">Demo Kirana Store<small>Grocery · Daily needs · Home delivery</small></div><div class="ribbon">DEMO</div></div></header>
+
+<div class="hero"><div class="wrap">
+<span class="pill">📍 Tatisilwai, Ranchi</span>
+<h1>Daily grocery at your door, order on WhatsApp 🛒</h1>
+<p>Atta, rice, dal, oil, masala, soap and more. See today&#x27;s rates, send your list on WhatsApp and get home delivery nearby.</p>
+<div class="btns">
+<a class="btn wa" href="https://wa.me/918580119500?text=Hi%2C%20I%20want%20to%20order%20grocery.%20My%20list%3A" target="_blank" rel="noopener">🛒 Send list on WhatsApp</a>
+<a class="btn ghost" href="tel:+918580119500">📞 Call</a>
+<a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Tatisilwai%2C%20Ranchi%2C%20Jharkhand" target="_blank" rel="noopener">🗺️ Maps</a>
+</div></div></div>
+<style>.fy{padding:22px 0 6px}.fy-g{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}@media(min-width:720px){.fy-g{grid-template-columns:repeat(3,1fr)}}.fy-c{background:#fff;border-radius:14px;padding:12px;box-shadow:0 2px 10px rgba(20,30,80,.06)}.fy-c .fy-i{font-size:24px}.fy-c b{display:block;font-size:14px;line-height:1.25;margin:6px 0 4px}.fy-c p{font-size:12.5px;color:#555;line-height:1.35;margin:0}</style><section class="fy" id="fayda"><div class="wrap"><h2>Website se aapki dukaan ko kya fayda?</h2><div class="fy-g"><div class="fy-c"><div class="fy-i">🛒</div><b>Saman ki list WhatsApp pe</b><p>Customer list bheje, aap ready rakho</p></div><div class="fy-c"><div class="fy-i">🏠</div><b>Home delivery order</b><p>Aas-paas ke ghar se seedha order</p></div><div class="fy-c"><div class="fy-i">🏷️</div><b>Offer aur rate dikhao</b><p>Aaj ka offer sabko ek link mein</p></div><div class="fy-c"><div class="fy-i">🔍</div><b>Google pe dikhega</b><p>Naye customer aapki dukaan dhundh paayenge</p></div><div class="fy-c"><div class="fy-i">🕐</div><b>24 ghante online dukaan</b><p>Raat ko bhi list bhej sakte hain, subah ready</p></div><div class="fy-c"><div class="fy-i">📲</div><b>Ek link, free prachar</b><p>WhatsApp status aur group mein share karo</p></div></div></div></section>
+
+
+<section id="list"><div class="wrap">
+<h2>Daily items</h2>
+<p class="sub">Fresh stock, fair rates · updated <span id="upd"></span></p>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<p class="note">* All prices are demo rates. Please confirm the real rate with the shop.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap two"><div class="box offer"><span class="pill">🚚 Home delivery</span><b style="margin-top:8px">Free delivery above ₹ 500*</b><p>Send your list on WhatsApp, we pack it and deliver nearby in 1 hour. (Demo text)</p></div><div class="box"><h2>📝 How to order</h2><ul class="list" style="margin-top:8px"><li>Send your list or a photo of it on WhatsApp</li><li>We confirm the total</li><li>Pay on delivery</li></ul></div><div class="box"><h2>📦 We also have</h2><ul class="list" style="margin-top:8px"><li>Biscuits, snacks, cold drinks</li><li>Baby care &amp; personal care</li><li>Pooja items</li></ul></div><div class="box"><h2>💳 Payment</h2><ul class="list" style="margin-top:8px"><li>✅ UPI / PhonePe / GPay</li><li>✅ Cash on delivery</li><li>✅ Monthly khata for regulars</li></ul></div></div></section>
+
+<section style="padding-top:0"><div class="wrap two">
+<div class="box"><h2>⏰ Timing</h2><ul class="list" style="margin-top:8px"><li>Every day: 7:00 AM – 10:00 PM</li></ul><p class="note">(Demo timing)</p></div>
+<div class="box"><h2>📍 Address</h2><p style="font-size:14px;margin-top:8px">Shop No. __, Main Road, Tatisilwai, Ranchi, Jharkhand</p><p class="note">(Demo address)</p>
+<div class="btns" style="margin-top:10px"><a class="btn" style="background:#151a2d;color:#fff;flex:1" href="https://www.google.com/maps/search/?api=1&query=Tatisilwai%2C%20Ranchi%2C%20Jharkhand" target="_blank" rel="noopener">🗺️ Get directions</a></div></div>
+</div></section>
+
+<section style="background:#f1f3f9"><div class="wrap">
+<h2>How updates work</h2>
+<p class="sub">The owner does nothing technical</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><b>💬 Owner sends changes on WhatsApp</b><span>New items, new rate or something finished? Just send it on WhatsApp.</span></div></div>
+<div class="step"><div class="num">2</div><div><b>✏️ It gets updated</b><span>One line changes in the website's list. That's it.</span></div></div>
+<div class="step"><div class="num">3</div><div><b>⚡ Shows on the website instantly</b><span>Customers see the new items and rates right away.</span></div></div>
+</div>
+<code>{&quot;name&quot;:&quot;Bathing Soap (4 pc)&quot;, &quot;price&quot;:&quot;₹ 140&quot;, &quot;status&quot;:&quot;out&quot;}
+          ↑ changed &quot;in&quot; to &quot;out&quot; = Out of Stock</code>
+</div></section>
+
+<footer>Demo Kirana Store · for demo only<br><br>Website by <a href="https://burnoxweb.github.io/" target="_blank" rel="noopener">Burnox</a> · get a website for your shop</footer>
+<a class="float" href="https://wa.me/918580119500?text=Hi%2C%20I%20want%20to%20order%20grocery.%20My%20list%3A" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<script>
+/* ===== EDIT HERE: one line per item. status: "in" | "new" | "out" ===== */
+var ITEMS=[{"name": "Aashirvaad Atta 5 kg","cat": "Atta & Rice","emoji": "🌾","price": "₹ 260","status": "in","note": "Whole wheat"},
+{"name": "Basmati Rice 1 kg","cat": "Atta & Rice","emoji": "🍚","price": "₹ 110","status": "in","note": "Long grain"},
+{"name": "Arhar Dal 1 kg","cat": "Dal","emoji": "🫘","price": "₹ 160","status": "in","note": "Unpolished"},
+{"name": "Mustard Oil 1 L","cat": "Oil & Ghee","emoji": "🛢️","price": "₹ 175","status": "in","note": "Kachi ghani"},
+{"name": "Desi Ghee 500 g","cat": "Oil & Ghee","emoji": "🧈","price": "₹ 330","status": "new","note": "Pure cow ghee"},
+{"name": "Sugar 1 kg","cat": "Daily needs","emoji": "🧂","price": "₹ 46","status": "in","note": "Clean white"},
+{"name": "Tea 250 g","cat": "Daily needs","emoji": "🍵","price": "₹ 130","status": "in","note": "Strong CTC"},
+{"name": "Masala Pack","cat": "Masala","emoji": "🌶️","price": "₹ 120","status": "in","note": "Haldi, mirch, dhaniya"},
+{"name": "Bathing Soap (4 pc)","cat": "Home care","emoji": "🧼","price": "₹ 140","status": "out","note": "Family pack"},
+{"name": "Detergent 1 kg","cat": "Home care","emoji": "🫧","price": "₹ 120","status": "in","note": "Powder"}];
+/* ===================================================================== */
+var WA="918580119500",F="all",BADGE={"in": "✅ In Stock", "new": "🆕 New", "out": "❌ Out of Stock"},MSG="Hi, please add {n} to my order",BTN="\ud83d\uded2 Add to order";
+var CLS={in:"b-in",out:"b-out",new:"b-new"},G=["#2b8a3e","#40c057","#fab005"];
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function draw(){var h="";ITEMS.forEach(function(p,i){
+if(F=="new"&&p.status!="new")return;if(F!="all"&&F!="new"&&p.cat!=F)return;
+var m=encodeURIComponent(MSG.replace("{n}",p.name)),o=p.status=="out";
+h+='<div class="card'+(o?" out":"")+'"><div class="ph" style="background:linear-gradient(135deg,'+G[i%3]+'2b,'+G[(i+1)%3]+'40)">'+p.emoji+'</div>'+
+'<span class="badge '+CLS[p.status]+'">'+BADGE[p.status]+'</span><h3>'+esc(p.name)+'</h3><div class="spec">'+esc(p.note)+'</div>'+
+'<div class="price">'+esc(p.price)+'<small>demo rate</small></div>'+
+'<div class="ask"><a href="https://wa.me/'+WA+'?text='+m+'" target="_blank" rel="noopener">'+(o?"🔔 Ask when available":BTN)+'</a></div></div>'});
+document.getElementById("grid").innerHTML=h||'<p class="sub">Nothing in this filter right now.</p>'}
+function chips(){var cats=[];ITEMS.forEach(function(p){if(cats.indexOf(p.cat)<0)cats.push(p.cat)});
+var list=[["all","All"]].concat(cats.map(function(c){return[c,c]})).concat([["new",BADGE.new]]);
+var c=document.getElementById("chips");c.innerHTML=list.map(function(x){return'<button class="chip'+(x[0]==F?" on":"")+'" data-f="'+esc(x[0])+'">'+esc(x[1])+'</button>'}).join("");
+c.onclick=function(e){var t=e.target.closest(".chip");if(!t)return;F=t.getAttribute("data-f");chips();draw()}}
+document.getElementById("upd").textContent="today, "+new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short"});
+chips();draw();
+</script></body></html>

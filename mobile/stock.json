@@ -1,0 +1,12 @@
+[
+  {"name": "Redmi Note 14 5G", "brand": "Redmi", "price": "₹ 17,999", "spec": "8GB / 128GB", "status": "in", "color": "#ff6a00"},
+  {"name": "Redmi 14C", "brand": "Redmi", "price": "₹ 9,999", "spec": "4GB / 128GB", "status": "in", "color": "#ff9a3c"},
+  {"name": "Realme Narzo 80x", "brand": "Realme", "price": "₹ 13,999", "spec": "6GB / 128GB", "status": "new", "color": "#f5c400"},
+  {"name": "Realme 14 Pro", "brand": "Realme", "price": "₹ 24,999", "spec": "8GB / 256GB", "status": "out", "color": "#d4a900"},
+  {"name": "Samsung Galaxy A16 5G", "brand": "Samsung", "price": "₹ 15,499", "spec": "6GB / 128GB", "status": "in", "color": "#1e5bff"},
+  {"name": "Samsung Galaxy M35", "brand": "Samsung", "price": "₹ 16,999", "spec": "6GB / 128GB", "status": "new", "color": "#3d7bff"},
+  {"name": "Vivo T4x 5G", "brand": "Vivo", "price": "₹ 13,499", "spec": "6GB / 128GB", "status": "in", "color": "#2bb6ff"},
+  {"name": "OPPO A5 Pro", "brand": "OPPO", "price": "₹ 17,999", "spec": "8GB / 128GB", "status": "out", "color": "#12a150"},
+  {"name": "iPhone 16", "brand": "iPhone", "price": "₹ 69,900", "spec": "128GB", "status": "new", "color": "#8a8f98"},
+  {"name": "iPhone 15", "brand": "iPhone", "price": "₹ 59,900", "spec": "128GB", "status": "in", "color": "#e48fb0"}
+]

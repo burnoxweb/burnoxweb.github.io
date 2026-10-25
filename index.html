@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Burnox | Video Editor · Ranchi</title>
+<meta name="description" content="Reels jo rok de scroll. Instagram &amp; YouTube: @ig.burnox. Reels/Shorts editing from ₹300, shop reels and shop websites from ₹1000. Tatisilwai, Ranchi.">
+<meta property="og:title" content="Burnox | Video Editor">
+<meta property="og:description" content="Reels jo rok de scroll · Reels ₹300 · Shop websites from ₹1000 · Tatisilwai, Ranchi">
+<meta property="og:image" content="https://burnoxweb.github.io/og.jpg">
+<meta name="theme-color" content="#07070b">
+<style>
+:root{--bg:#07070b;--card:#12121a;--line:#24242f;--txt:#f2f2f7;--mut:#9a9aab;--neon:#c6ff00;--neon2:#00e5ff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:rgba(7,7,11,.92);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-weight:900;letter-spacing:.5px;font-size:20px}
+.logo span{color:var(--neon)}
+.navbtn{background:var(--neon);color:#000;font-weight:800;font-size:14px;padding:8px 14px;border-radius:999px}
+.hero{padding:56px 0 44px;background:radial-gradient(ellipse 80% 60% at 70% 0%,rgba(198,255,0,.16),transparent 70%),radial-gradient(ellipse 70% 50% at 0% 100%,rgba(0,229,255,.10),transparent 70%)}
+.tag{display:inline-block;font-size:13px;color:var(--neon);border:1px solid rgba(198,255,0,.4);padding:4px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(44px,13vw,84px);line-height:.95;font-weight:900;letter-spacing:-2px}
+h1 .bar{color:var(--neon)}
+h1 small{display:block;font-size:.42em;letter-spacing:-.5px;color:var(--mut);margin-top:10px;font-weight:800}
+.tagline{font-size:clamp(24px,7vw,36px);font-weight:900;margin:26px 0 10px;line-height:1.1}
+.tagline em{font-style:normal;color:var(--neon);text-shadow:0 0 22px rgba(198,255,0,.55)}
+.sub{color:var(--mut);max-width:520px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;padding:14px 22px;border-radius:14px;font-size:16px}
+.wa{background:#25d366;color:#04140a;box-shadow:0 0 0 0 rgba(37,211,102,.6)}
+.ghost{border:1px solid var(--line);background:var(--card)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,8vw,40px);font-weight:900;letter-spacing:-1px;line-height:1.05;margin-bottom:8px}
+h2 b{color:var(--neon)}
+.lead{color:var(--mut);margin-bottom:24px}
+.svc{display:grid;gap:12px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.s h3{font-size:18px;font-weight:800}
+.s p{color:var(--mut);font-size:14px;margin-top:2px}
+.price{text-align:right;white-space:nowrap}
+.price b{display:block;font-size:24px;color:var(--neon);font-weight:900;line-height:1}
+.price span{font-size:12px;color:var(--mut)}
+.s.hot{border-color:rgba(198,255,0,.5);box-shadow:0 0 24px rgba(198,255,0,.08)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v{position:relative;border-radius:16px;overflow:hidden;background:var(--card);aspect-ratio:9/16;border:1px solid var(--line)}
+.v img{width:100%;height:100%;object-fit:cover;display:block}
+.v::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.85))}
+.play{position:absolute;top:50%;left:50%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:rgba(0,0,0,.55);border:2px solid var(--neon);z-index:1}
+.play::before{content:"";position:absolute;left:20px;top:15px;border-left:16px solid var(--neon);border-top:10px solid transparent;border-bottom:10px solid transparent}
+.cap{position:absolute;left:10px;right:10px;bottom:10px;z-index:1;font-size:13px;font-weight:700;line-height:1.3}
+.cap span{display:block;color:var(--neon);font-size:12px;font-weight:800}
+.wide{display:block;margin-top:12px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.wide img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.wide div{padding:14px 16px;font-weight:700}
+.wide div span{display:block;font-size:13px;color:var(--mut);font-weight:500}
+.more{display:block;text-align:center;margin-top:16px;color:var(--neon);font-weight:800}
+.shop{background:linear-gradient(160deg,rgba(198,255,0,.12),rgba(0,229,255,.06) 60%,transparent);border:1px solid rgba(198,255,0,.35);border-radius:24px;padding:26px 22px}
+.shop ul{list-style:none;margin:18px 0 22px;display:grid;gap:10px}
+.shop li{padding-left:30px;position:relative}
+.shop li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--neon);color:#000;font-weight:900;font-size:13px;display:grid;place-items:center}
+.who{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.who span{font-size:13px;background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+.big{display:flex;justify-content:center;width:100%;font-size:19px;padding:18px}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.links .btn{justify-content:center}
+.ighead{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:900;margin:6px 0 14px}
+.ighead i{font-style:normal;font-size:13px;font-weight:700;color:var(--mut)}
+.ytsec{margin-top:36px}
+.btn.igb{background:linear-gradient(45deg,#f9ce34,#ee2a7b 45%,#6228d7);color:#fff;border:0}
+.btn.ytb{background:#ff0033;color:#fff;border:0}
+.play.ig{border-color:#fff}.play.ig::before{border-left-color:#fff}
+.igcard{display:grid;place-items:center;text-align:center;background:linear-gradient(45deg,#f9ce34,#ee2a7b 45%,#6228d7);border:0;font-weight:900;font-size:18px;line-height:1.25;color:#fff}
+.igcard::after{display:none}.igcard b{display:block;font-size:34px;margin-bottom:6px}.igcard small{display:block;font-size:13px;margin-top:8px;font-weight:700;opacity:.9}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.socials .btn{padding:11px 16px;font-size:15px}
+.about p{color:#cfcfda;margin-bottom:12px}
+.about .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.about .chips span{font-size:13px;background:var(--card);border:1px solid rgba(198,255,0,.35);color:var(--neon);padding:6px 12px;border-radius:999px;font-weight:700}
+.steps{list-style:none;display:grid;gap:12px;counter-reset:st}
+.steps li{counter-increment:st;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 18px 18px 66px;position:relative}
+.steps li::before{content:counter(st);position:absolute;left:18px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--neon);color:#000;font-weight:900;display:grid;place-items:center}
+.steps h3,.why h3{font-size:17px;font-weight:800}
+.steps p,.why p{color:var(--mut);font-size:14px;margin-top:2px}
+.why{display:grid;gap:12px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.why b{font-size:24px;display:block;margin-bottom:6px}
+.note{color:var(--mut);font-size:13px;margin-top:14px}
+.s .was{text-decoration:line-through;color:var(--mut);font-size:12px;display:block}
+.badge{display:inline-block;font-size:11px;font-weight:900;background:var(--neon);color:#000;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.fors{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fors div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;font-weight:800}
+.fors div span{display:block;font-size:26px;margin-bottom:4px}
+.fors div p{color:var(--mut);font-size:13px;font-weight:500;margin-top:2px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--neon);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--mut);margin-top:10px;font-size:15px}
+.band{background:linear-gradient(135deg,var(--neon),#7dff6a 50%,var(--neon2));color:#000;border-radius:26px;padding:32px 22px;text-align:center}
+.band h2{color:#000}.band h2 b{color:#000;text-decoration:underline}
+.band p{font-weight:600;margin:8px 0 20px}
+.band .btn.wa{background:#000;color:#fff;box-shadow:none}
+@media(min-width:640px){.why{grid-template-columns:1fr 1fr}.fors{grid-template-columns:repeat(4,1fr)}}
+footer{padding:28px 0 40px;color:var(--mut);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+@media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:no-preference){.wa{animation:p 2.4s infinite}@keyframes p{70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#">BURN<span>OX</span></a><a class="navbtn" href="https://wa.me/918580119500?text=Hi%20Burnox">WhatsApp</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="tag">📍 Tatisilwai, Ranchi</div>
+<h1>Burnox <small><span class="bar">|</span> Video Editor</small></h1>
+<p class="tagline">Reels jo <em>rok de scroll.</em></p>
+<p class="sub">Shorts &amp; Reels editing with beat-sync, speed ramps and captions. Plus Insta reels and websites for local shops.</p>
+<div class="ctas">
+<a class="btn wa" href="https://wa.me/918580119500?text=Hi%20Burnox">💬 WhatsApp karo</a>
+<a class="btn ghost" href="#work">▶ Mera kaam</a>
+</div>
+<div class="socials">
+<a class="btn igb" href="https://www.instagram.com/ig.burnox">📸 @ig.burnox</a>
+<a class="btn ytb" href="https://youtube.com/@ig.burnox">▶ YouTube</a>
+</div>
+</div></header>
+
+<section id="about" class="about"><div class="wrap">
+<h2>Mere <b>baare mein</b></h2>
+<p>Namaste! Main Burnox hoon, Tatisilwai, Ranchi ka ek young video editor. Mujhe reels banana aur edit karna pasand hai: car edits, music edits, phonk aur jo bhi trend chal raha hai.</p>
+<p>Mera YouTube channel aur Instagram page dono <b>@ig.burnox</b> pe hai. "Mera kaam" mein jo reels hain, sab mere khud ke edit kiye hue hain. Ab main yahi kaam aapke liye bhi karta hoon, chahe aap creator ho ya dukaan wale.</p>
+<div class="chips"><span>Car edits</span><span>Music edits</span><span>Phonk</span><span>Trending reels</span><span>Shop websites</span></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Services &amp; <b>rates</b></h2>
+<p class="lead">Simple rates, no hidden charges. Sab starting prices hain.</p>
+<div class="svc">
+<div class="s hot"><div><h3>Basic reel / Short</h3><p>Cuts, music, transitions, captions, effects. 9:16, phone-ready</p></div><div class="price"><b>₹300</b><span>per reel</span></div></div>
+<div class="s hot"><div><h3>5 reels bundle <span class="badge">₹200 bachao</span></h3><p>Paanch reels ek saath, har hafte post karne ke liye</p></div><div class="price"><span class="was">₹1500</span><b>₹1300</b><span>5 reels</span></div></div>
+<div class="s"><div><h3>Shop promo reel</h3><p>Aapki dukaan, offers aur products ka Insta reel</p></div><div class="price"><b>Ask</b><span>on WhatsApp</span></div></div>
+<div class="s hot"><div><h3>Shop website</h3><p>Aisi hi mobile website, aapki dukaan ki</p></div><div class="price"><b>₹1000</b><span>se shuru</span></div></div>
+</div>
+<p class="note">* Ye starting prices hain. Lamba video ya zyada kaam ho to WhatsApp pe baat karke final rate tay karenge. Website ka .com domain ka kharcha alag hota hai.</p>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2>Mera <b>kaam</b></h2>
+<p class="lead">Instagram aur YouTube, dono pe. Tap karke dekho.</p>
+<div class="ighead">📸 Instagram Reels <i>@ig.burnox</i></div>
+<div class="grid">
+<a class="v" href="https://www.instagram.com/reel/DN15zlc5rwn/"><img src="img/ig-DN15zlc5rwn.jpg" alt="BMW M5 Competition Instagram reel" loading="lazy" width="360" height="640"><i class="play ig"></i><div class="cap"><span>❤ 75.4K likes</span>BMW M5 Competition</div></a>
+<a class="v" href="https://www.instagram.com/reel/DOC5XOWk-O4/"><img src="img/ig-DOC5XOWk-O4.jpg" alt="BMW M5 F90 Competition Instagram reel" loading="lazy" width="360" height="640"><i class="play ig"></i><div class="cap"><span>❤ 36.2K likes</span>BMW M5 F90 Competition</div></a>
+<a class="v" href="https://www.instagram.com/reel/DR100zhExQ5/"><img src="img/ig-DR100zhExQ5.jpg" alt="Montagem miau · car edit Instagram reel" loading="lazy" width="360" height="640"><i class="play ig"></i><div class="cap"><span>❤ 3.4K likes</span>Montagem miau · car edit</div></a>
+<a class="v" href="https://www.instagram.com/reel/DOSI8bMk9jC/"><img src="img/ig-DOSI8bMk9jC.jpg" alt="Jaane na tu × BMW M5 Instagram reel" loading="lazy" width="360" height="640"><i class="play ig"></i><div class="cap"><span>❤ 1.1K likes</span>Jaane na tu × BMW M5</div></a>
+<a class="v" href="https://www.instagram.com/reel/DPBn8t0E1Nk/"><img src="img/ig-DPBn8t0E1Nk.jpg" alt="BMW M4 Competition 🗿 Instagram reel" loading="lazy" width="360" height="640"><i class="play ig"></i><div class="cap"><span>❤ 161 likes</span>BMW M4 Competition 🗿</div></a>
+<a class="v igcard" href="https://www.instagram.com/ig.burnox"><div><b>📸</b>Aur reels<br>Instagram pe<small>@ig.burnox →</small></div></a>
+</div>
+<div class="ytsec"><div class="ighead">▶ YouTube Shorts <i>@ig.burnox</i></div>
+<div class="grid">
+<a class="v" href="https://www.youtube.com/shorts/vxqLsxktA7g"><img src="img/vxqLsxktA7g.jpg" alt="Cat edit Short" loading="lazy" width="360" height="640"><i class="play"></i><div class="cap"><span>3.5K views</span>Cat edit</div></a>
+<a class="v" href="https://www.youtube.com/shorts/e51-SpOqs1E"><img src="img/e51-SpOqs1E.jpg" alt="Phonk cat edit Short" loading="lazy" width="360" height="640"><i class="play"></i><div class="cap"><span>2.9K views</span>Phonk cat edit</div></a>
+<a class="v" href="https://www.youtube.com/shorts/sItogKd87P0"><img src="img/sItogKd87P0.jpg" alt="Hotel Room music edit Short" loading="lazy" width="360" height="640"><i class="play"></i><div class="cap"><span>1.9K views</span>Hotel Room · music edit</div></a>
+<a class="v" href="https://www.youtube.com/shorts/UeAn5xo-4Rc"><img src="img/UeAn5xo-4Rc.jpg" alt="Car remix edit Short" loading="lazy" width="360" height="640"><i class="play"></i><div class="cap"><span>1.8K views</span>Car remix edit</div></a>
+</div>
+<a class="wide" href="https://www.youtube.com/watch?v=oVTUza0VWcE"><img src="img/oVTUza0VWcE.jpg" alt="Where I Belong lyrics video" loading="lazy" width="640" height="360"><div>Where I Belong ☀️ (Lyrics)<span>Love-song lyrics video · new</span></div></a>
+<a class="more" href="https://youtube.com/@ig.burnox">Saare videos YouTube pe dekho →</a>
+</div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2>Kaise <b>kaam karta hoon</b></h2>
+<p class="lead">Sab kuch WhatsApp pe. Kahin aane-jaane ki zaroorat nahi.</p>
+<ol class="steps">
+<li><h3>Video / photos bhejo</h3><p>WhatsApp pe apni clips, photos aur bata do kaisa reel chahiye. Koi gaana pasand hai to woh bhi.</p></li>
+<li><h3>Main edit karta hoon</h3><p>Captions, music, transitions, effects, beat-sync. Trending style mein, phone ke liye 9:16.</p></li>
+<li><h3>Preview dekho</h3><p>Pehle watermark wala preview bhejta hoon. Kuch badalna ho to bata do.</p></li>
+<li><h3>UPI payment, phir final file</h3><p>Pasand aaye to UPI se payment karo, aur bina watermark ki final HD file turant aapke WhatsApp pe.</p></li>
+</ol>
+</div></section>
+
+<section id="why"><div class="wrap">
+<h2>Kyun <b>Burnox?</b></h2>
+<p class="lead">Seedhi baat, honest kaam.</p>
+<div class="why">
+<div><b>🔥</b><h3>Trending styles</h3><p>Phonk, car edits, beat-sync, speed ramps. Jo abhi chal raha hai, wahi style.</p></div>
+<div><b>⚡</b><h3>WhatsApp pe fast reply</h3><p>Message karo, jaldi jawab milega. Koi form, koi app nahi.</p></div>
+<div><b>💸</b><h3>Local, sasta rate</h3><p>Ranchi ke hisaab se rates. ₹300 se shuru.</p></div>
+<div><b>📱</b><h3>Phone-ready edits</h3><p>9:16 size, Insta Reels, YouTube Shorts aur WhatsApp status ke liye ready.</p></div>
+<div><b>✏️</b><h3>2 free changes</h3><p>Final se pehle 2 chhote changes free. Text, gaana ya cut, bata do.</p></div>
+<div><b>🔒</b><h3>Pehle dekho, phir pay karo</h3><p>Watermark preview pasand aaye, tabhi payment.</p></div>
+</div>
+</div></section>
+
+<section id="for"><div class="wrap">
+<h2>Kaun kaun <b>le sakta hai?</b></h2>
+<p class="lead">Jiske paas phone hai aur kuch dikhana hai, sab ke liye.</p>
+<div class="fors">
+<div><span>🏪</span>Dukaan<p>Offers, naya stock</p></div>
+<div><span>💪</span>Gym<p>Workout, membership offer</p></div>
+<div><span>💇</span>Salon<p>Before / after looks</p></div>
+<div><span>☕</span>Cafe<p>Menu, khana, vibe</p></div>
+<div><span>🎥</span>Creators<p>Reels, Shorts, edits</p></div>
+<div><span>🎂</span>Birthday<p>Photos se mast video</p></div>
+<div><span>🎉</span>Events<p>Function highlights</p></div>
+<div><span>📚</span>Coaching<p>Admission promo</p></div>
+</div>
+</div></section>
+
+<section id="shop"><div class="wrap">
+<div class="shop">
+<h2>Website chahiye apni <b>dukaan</b> ki?</h2>
+<p class="lead" style="margin:6px 0 0">Ye page jaisa dikh raha hai, waisi hi website aapki dukaan ki. Customer phone pe kholega, seedha aapko WhatsApp karega.</p>
+<ul>
+<li>Dukaan ka naam, photos aur products</li>
+<li>Address + Google Maps, ek tap mein raasta</li>
+<li>Bada WhatsApp &amp; call button</li>
+<li>Mobile pe fast, sasta phone pe bhi</li>
+<li>Apna link, WhatsApp / Insta pe share karo</li>
+</ul>
+<div class="who"><span>Salon</span><span>Gym</span><span>Cafe</span><span>Mithai</span><span>Kapde</span><span>Mobile shop</span><span>Coaching</span><span>Photo studio</span></div>
+<a class="btn wa big" href="https://wa.me/918580119500?text=Hi%20Burnox%2C%20mujhe%20apni%20dukaan%20ki%20website%20chahiye">🏪 Website banwao</a>
+</div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Aksar <b>pooche jaane wale sawaal</b></h2>
+<p class="lead">FAQ, short mein.</p>
+<details><summary>Video kitne time mein milega?</summary><p>Usually 24–48 ghante mein. Zyada reels ya lamba video ho to time pehle hi bata deta hoon.</p></details>
+<details><summary>Payment kaise hoga?</summary><p>UPI se (GPay, PhonePe, Paytm). Pehle watermark wala preview dekho, pasand aaye to pay karo, phir final file milti hai. Website ke liye thoda advance lagta hai.</p></details>
+<details><summary>Kya milne aana padega?</summary><p>Nahi. Sab WhatsApp pe ho jaata hai: video bhejo, preview dekho, final lo. Tatisilwai / Ranchi mein ho aur milna chaho to bhi theek hai.</p></details>
+<details><summary>Changes karwa sakte hain?</summary><p>Haan, final se pehle 2 chhote changes free hain (text, gaana, cut). Bada change ho to WhatsApp pe baat kar lenge.</p></details>
+<details><summary>Website ka .com mil sakta hai?</summary><p>Haan. .com domain dukaan ke apne naam pe khareeda jaata hai, taaki hamesha aapka hi rahe. Domain ka kharcha (lagbhag ₹500–1000 saal ka) alag hota hai, setup main kar dunga.</p></details>
+<details><summary>Kaunsi video bhejun? Quality kaisi ho?</summary><p>Phone ki normal video chal jaayegi. Bas roshni achhi ho aur clip hilti na ho. WhatsApp pe "document" bana ke bhejoge to quality best rahegi.</p></details>
+</div></section>
+
+<section id="go"><div class="wrap">
+<div class="band">
+<h2>Aapka agla reel <b>viral</b> ho sakta hai</h2>
+<p>Abhi WhatsApp karo. Video bhejo, preview lo, pasand aaye tabhi pay karo.</p>
+<a class="btn wa big" href="https://wa.me/918580119500?text=Hi%20Burnox%2C%20mujhe%20reel%20edit%20karwana%20hai">💬 Abhi WhatsApp karo</a>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Chalo, <b>baat karte hain</b></h2>
+<p class="lead">Reel ho ya website, WhatsApp pe message karo: +91 85801 19500 · Insta / YouTube: @ig.burnox</p>
+<a class="btn wa big" href="https://wa.me/918580119500?text=Hi%20Burnox">💬 WhatsApp karo</a>
+<div class="links">
+<a class="btn igb" href="https://www.instagram.com/ig.burnox">📸 Instagram</a>
+<a class="btn ytb" href="https://youtube.com/@ig.burnox">▶ YouTube</a>
+</div>
+</div></section>
+
+<footer>© Burnox · Video Editor · Tatisilwai, Ranchi</footer>
+</body>
+</html>
